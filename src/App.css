@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.App {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+.SideBarflex {
+  width: 20%;
+}
+
+.SideBar {
+  height: 100vh;
+  width: 100%;
+  background-color: #EDEDED;
+}
+
+.SearchProfileflex {
+  display: flex;
+  flex: 1;
+  gap: 20px;
+  padding: 20px;
+}
+
+.Searchflex, .Profileflex {
+  flex: 1;
+  margin: 0 10px; /* Add spacing between flex items */
+}
+
+.Searchflex {
+  /* Add any additional styles specific to Searchflex */
+}
+
+.Profileflex {
+  /* Add any additional styles specific to Profileflex */
+}
+
+.SideBarList {
+  height: 100%;
+  width: 100%;
+}
+
+.SideBarList .row {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  padding: 0 10px;
+  font-size: 18px;
+}
+
+.SideBarList .row a {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.SideBarList .row div {
+  margin-right: 10px;
+}
+
+.DocumentsSection {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  grid-gap: 20px; /* Space between grid items */
+  margin-top: 20px; /* Space between SearchProfileflex and DocumentsSection */
+}
