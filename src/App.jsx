@@ -9,7 +9,7 @@ export default function App() {
     <main className="App">
       <div className="SideBarflex">
         <SideBar />
-        {/* sidebar */}
+        {/* sidebar///// */}
       </div>
       <div className="MainContent">
         <div className="SearchProfileflex">
