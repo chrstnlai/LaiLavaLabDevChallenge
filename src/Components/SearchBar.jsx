@@ -6,11 +6,10 @@ import "./SearchBar.css";
 export const SearchBar = () => {
   return (
     <div className ="SearchBar">
-      <FaSearch id ="search-icon" />
-      <div className = "searchtext">
-        <input placeholder = "Search in Aro..."></input>
-      </div>
-      
+        <FaSearch id ="search-icon" />
+        <div className = "searchtext">
+        <input placeholder = "Search in Aro"></input>
+        </div>
     </div>
        
      

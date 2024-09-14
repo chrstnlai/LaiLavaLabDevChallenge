@@ -1,5 +1,4 @@
-//Storing Side Bar Tabs in Array of Objects 
-//For Icons,  npm install @mui/icons-material
+//Storing Side Bar Tabs in Array of Objects
 
 import { MdHomeFilled } from "react-icons/md";
 import { IoMdPerson } from "react-icons/io";
@@ -8,32 +7,29 @@ import { IoMdArchive } from "react-icons/io";
 import { IoMdTrash } from "react-icons/io";
 
 export const SideBarInfo = [
-
   {
-    icon:<MdHomeFilled />,
-    title:"All Projects",
-    link:"/YourProjects"
+    icon: <MdHomeFilled />,
+    title: "All Projects",
+    link: "/",
   },
   {
-    icon:<IoMdPerson />,
-    title:"Your Projects",
-    link:"/home"
+    icon: <IoMdPerson />,
+    title: "Your Projects",
+    link: "/YourProjects",
   },
   {
-    icon:<IoPeople />,
-    title:"Shared with you",
-    link:"/home"
+    icon: <IoPeople />,
+    title: "Shared with you",
+    link: "/SharedWithYou",
   },
   {
-    icon:<IoMdArchive />,
-    title:"Archived",
-    link:"/home"
+    icon: <IoMdArchive />,
+    title: "Archived",
+    link: "/Archived",
   },
   {
-    icon:<IoMdTrash />,
-    title:"Trash",
-    link:"/home"
-  }
-  
-  
-]
+    icon: <IoMdTrash />,
+    title: "Trash",
+    link: "/Trash",
+  },
+];

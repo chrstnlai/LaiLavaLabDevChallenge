@@ -1,15 +1,18 @@
 import "./App.css";
+import React, { useState } from 'react';
 import SideBar from "./Components/SideBar";
 import { SearchBar } from "./Components/SearchBar";
 import { Profile } from "./Components/Profile";
 import { Documents } from "./Components/Documents";
+import viewtoggle from '/src/assets/viewstoggle.png';
+
 
 export default function App() {
+
   return (
     <main className="App">
       <div className="SideBarflex">
         <SideBar />
-        {/* sidebar///// */}
       </div>
       <div className="MainContent">
         <div className="SearchProfileflex">
@@ -19,6 +22,10 @@ export default function App() {
           <div className="Profileflex">
             <Profile />
           </div>
+        </div>
+        <div className="ProjectsHeader">
+          <h1 className="AllProjectText">All Projects</h1>
+          <img src={viewtoggle} alt="viewtoggle" className="ViewToggleIcon" />
         </div>
         <div className="DocumentsSection">
         <div>
