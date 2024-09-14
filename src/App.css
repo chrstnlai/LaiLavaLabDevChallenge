@@ -145,8 +145,11 @@ body {
   margin: 20px 0; 
 }
 
-.ViewToggleIcon {
+.ViewToggleIcons {
   cursor: pointer; 
+  display: flex;
+  gap: 10px;
+  justify-content: center; 
 }
 
 .manropefont{
@@ -155,4 +158,10 @@ body {
   font-weight: 500;
   font-style: normal;
   padding: 0 10px;
+}
+
+.ViewToggleIconList{
+  width:20px;
+  height:20px;
+  
 }

@@ -2,14 +2,24 @@ import "../App.css";
 import React, { useState } from 'react';
 import Christine from "/src/assets/Christine.png";
 import "./Profile.css";
+import { useNavigate } from "react-router-dom";
+
+//Click on the profile picture and a drop down menu will appear 
 
 export const Profile = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const Menus = ['Profile', 'Docs', 'Settings', 'Logout'];
+  const menunavigate = useNavigate();
+  const Menus = [{name:'Profile', path:'/profile'}, {name:'Settings', path:'/setting'}, {name:'Logout', path:'/logout'}];
 
-  const toggleMenu = () => {
+  const dropdownMenu = () => {
     setIsMenuOpen(prevState => !prevState);
   };
+
+  const menuClick = (path) => {
+    menunavigate(path);
+    setIsMenuOpen(false);
+  }
+
 
   return (
     <div className="profile-container">
@@ -18,7 +28,7 @@ export const Profile = () => {
           src={Christine} 
           alt="user" 
           className="profile-img" 
-          onClick={toggleMenu} 
+          onClick={dropdownMenu} 
         />
         <div className="profile-details">
           <p className="profile-name">Christine Lai</p>
@@ -27,8 +37,9 @@ export const Profile = () => {
         {isMenuOpen && (
           <div className="dropdown-menu">
             <ul>
+      {/* iterates through the menu  */}
               {Menus.map((menu) => (
-                <li key={menu}>{menu}</li>
+                <li key={menu.name} onClick={() => menuClick(menu.path)}>{menu.name}</li>
               ))}
             </ul>
           </div>

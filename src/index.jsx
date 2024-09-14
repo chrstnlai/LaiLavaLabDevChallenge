@@ -7,7 +7,7 @@ import AllProjects from "./AllProject.jsx";
 import SharedWithYou from "./SharedWithYou.jsx";
 import Archived from "./Archived.jsx";
 import Trash from "./Trash.jsx";
-
+import DocumentPage from "./DocumentPage.jsx";
 
 
 
@@ -21,6 +21,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 				<Route path="/SharedWithYou" element={<SharedWithYou />} />
 				<Route path="/Archived" element={<Archived />} />
 				<Route path="/Trash" element={<Trash />} />
+				<Route path="/DocumentPage" element={<DocumentPage />} />
+				
 			</Routes>
 		</BrowserRouter>
 	</React.StrictMode>

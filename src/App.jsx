@@ -4,7 +4,8 @@ import SideBar from "./Components/SideBar";
 import { SearchBar } from "./Components/SearchBar";
 import { Profile } from "./Components/Profile";
 import { Documents } from "./Components/Documents";
-import viewtoggle from '/src/assets/viewstoggle.png';
+import viewgrid from '/src/assets/viewgrid.png';
+import listview from '/src/assets/listview.png';
 
 
 export default function App() {
@@ -25,7 +26,11 @@ export default function App() {
         </div>
         <div className="ProjectsHeader">
           <h1 className="AllProjectText">All Projects</h1>
-          <img src={viewtoggle} alt="viewtoggle" className="ViewToggleIcon" />
+          <div className="ViewToggleIcons">
+      {/* Click on the button to toggle between grid and list view  */}
+            <img src={viewgrid} alt="viewgrid" className="ViewToggleIcon" />
+            <img src={listview} alt="listview" className="ViewToggleIconList" />
+          </div>
         </div>
         <div className="DocumentsSection">
         <div>

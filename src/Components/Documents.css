@@ -7,6 +7,8 @@
   border-radius: 8px;
   background-color: #fff;
   width: fit-content;
+  text-decoration: none;
+  color:black;
 }
 
 .docimage {
